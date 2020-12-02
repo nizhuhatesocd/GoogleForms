@@ -1,0 +1,6 @@
+README.md
+setup.py
+GoogleFormsHack.egg-info/PKG-INFO
+GoogleFormsHack.egg-info/SOURCES.txt
+GoogleFormsHack.egg-info/dependency_links.txt
+GoogleFormsHack.egg-info/top_level.txt
