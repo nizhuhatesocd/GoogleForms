@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
         description="Hack Google Forms User Data Entries",
         long_description=long_description,
         long_description_content_type="text/markdown",
-        url="GoogleForms GitHub Url",
+        url="https://github.com/pypa/sampleproject",
         packages=setuptools.find_packages(),
         classifiers=[
             "Programming Language :: Python :: 3",
