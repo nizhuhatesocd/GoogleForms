@@ -2,7 +2,7 @@ Metadata-Version: 2.1
 Name: GoogleFormsHack
 Version: 1.0.0
 Summary: Hack Google Forms User Data Entries
-Home-page: GoogleForms GitHub Url
+Home-page: https://github.com/pypa/sampleproject
 Author: Ashkan Ebtekari
 Author-email: ashkanebtekari@gmail.com
 License: UNKNOWN
@@ -39,7 +39,7 @@ Description: # Google Forms
         Developed With LOVE By Ashkan Ebtekari
         
 Platform: UNKNOWN
-Classifier: Programming :: Language :: Python3
+Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
