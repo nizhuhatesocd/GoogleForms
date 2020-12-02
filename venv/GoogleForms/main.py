@@ -30,4 +30,31 @@ class Main:
         exit()
     
 
-    
+    # Chrome Driver
+    chromedriver = "/usr/local/bin/chromedriver"
+    driver = webdriver.Chrome(chromedriver)
+
+    # Target Form
+    link = "https://docs.google.com/forms/d/e/1FAIpQLSfoe4on0CEB0ilWeSd5cM2wqTH2yO9CDOPSA3IeW0uGVfwXUw/viewform?usp=sf_link"
+    driver.get(link)
+
+    # Target Option
+    optionpath = '//*[@id="i20"]/div[3]/div'
+    submitpath = '//*[@id="mG61Hd"]/div[2]/div/div[3]/div/div/div/span'
+
+    # Counter
+    counter = 0
+
+    while counter < 100:
+        # Choice Automation
+        choice = driver.find_element_by_xpath(optionpath)
+        webdriver.ActionChains(driver).move_to_element(choice).click(choice).perform()
+        time.sleep(0.5)
+
+        # Submit Automation
+        submit = driver.find_element_by_xpath(submitpath)
+        webdriver.ActionChains(driver).move_to_element(submit).click(submit).perform()
+
+        # Counter & Redo
+        counter = counter + 1
+        driver.get(link)
