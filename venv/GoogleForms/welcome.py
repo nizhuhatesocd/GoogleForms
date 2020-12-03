@@ -36,4 +36,3 @@ def getwelcome():
           'Version 1.0.0 \n'
           'Developed By Ashkan Ebtekari\n'
           '2020 @ Copyright\n \n \n')
-
