@@ -15,12 +15,6 @@ attacks including the rapid and secret finder attacks and detailed branch attack
 # Be The Employee Of The Year ! :tada:
 ![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleForms.gif)
 
-# What the Heck is XPATH ? :mega:
-**XPath**  uses *path expressions* to select nodes in an XML document. The node is selected by following a path or steps. The most useful path expressions are listed below
-
-# Finding XPATH :bulb:
-**XPath** of Elements are available by using F12 on the live webpage by entering <br>
-the chrome developer console and select xpath by copy selections
 
 # Selecting Nodes :balloon:
 **XPath**  Expansion Algorithms
@@ -46,6 +40,14 @@ the chrome developer console and select xpath by copy selections
 | //@lang	      | Selects all attributes that are named lang |
 
 [!]**Note**: (If the path starts with a slash ( / ) it always represents an absolute path to an element !)
+
+
+# What the Heck is XPATH ? :mega:
+**XPath**  uses *path expressions* to select nodes in an XML document. The node is selected by following a path or steps. The most useful path expressions are listed below
+
+# Finding XPATH :bulb:
+**XPath** of Elements are available by using F12 on the live webpage by entering <br>
+the chrome developer console and select xpath by copy selections
 
 # Attacks :sunglasses:
 
