@@ -13,12 +13,13 @@ Easily Hack Google Forms User Data Entries with wide range of possible <br>
 attacks including the rapid and secret finder attacks and detailed branch attacks. <br>
 
 # Be The Employee Of The Year ! :tada:
-![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleFormsHack.gif)
-Get More into automations with google forms hack selenium and chrome drive. <br>
-Easily manage vote sheets, and entry automations with GoogleFormsHack. <br>
+### Get More into automations with google forms hack selenium and chrome drive. <br>
+### Easily manage vote sheets, and entry automations with GoogleFormsHack. <br> <br>
+![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleFormsHack.gif) <br>
+
 
 # Celebrate ! :beers:
-Be the Winner and Celebrate !
+### Be the Winner and Celebrate ! <br> <br>
 ![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleCelebration)
 
 
