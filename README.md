@@ -14,8 +14,13 @@ attacks including the rapid and secret finder attacks and detailed branch attack
 
 # Be The Employee Of The Year ! :tada:
 ![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleFormsHack.gif)
+Get More into automations with google forms hack selenium and chrome drive. <br>
+Easily manage vote sheets, and entry automations with GoogleFormsHack. <br>
 
 # Celebrate ! :beers:
+Be the Winner and Celebrate !
+![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleCelebration.gif)
+
 
 # Selecting Nodes :balloon:
 **XPath**  Expansion Algorithms
