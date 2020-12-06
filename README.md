@@ -13,7 +13,7 @@ Easily Hack Google Forms User Data Entries with wide range of possible <br>
 attacks including the rapid and secret finder attacks and detailed branch attacks. <br>
 
 # Be The Employee Of The Year ! :tada:
-![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleForms.gif)
+![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleFormsHack.gif)
 
 
 # Selecting Nodes :balloon:
