@@ -9,12 +9,12 @@
 [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-Easily Hack Google Forms User Data Entries with wide range of possible <br>
-attacks including the rapid and secret finder attacks and detailed branch attacks. <br>
+**Easily** *Hack Google Forms* User **Data Entries** with wide range of possible <br>
+attacks including the **rapid** and **secret finder** *attacks* and detailed *branch attacks*. <br>
 
 # Be The Employee Of The Year ! :tada:
-### Get More into automations with google forms hack selenium and chrome drive. <br>
-### Easily manage vote sheets, and entry automations with GoogleFormsHack. <br> <br>
+##### Get More into automations with google forms hack selenium and chrome drive. <br>
+##### Easily manage vote sheets, and entry automations with GoogleFormsHack. <br> <br>
 ![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleFormsHack.gif) <br>
 
 
@@ -24,7 +24,7 @@ attacks including the rapid and secret finder attacks and detailed branch attack
 
 
 # Selecting Nodes :balloon:
-**XPath**  Expansion Algorithms
+**XPath**  *Expansion Algorithms*
 
 | Expression | Description                                |
 | ---------- | ------------------------------------------ |
@@ -46,15 +46,15 @@ attacks including the rapid and secret finder attacks and detailed branch attack
 | bookstore//book |	Selects all book elements that are descendant of the bookstore element, no matter where they are under the bookstore element |
 | //@lang	      | Selects all attributes that are named lang |
 
-[!]**Note**: (If the path starts with a slash ( / ) it always represents an absolute path to an element !)
+[!]**Note**: (If the **path** starts with a *slash* ( / ) it always **represents** an *absolute path* to an **element** !)
 
 
 # What the Heck is XPATH ? :rainbow:
-**XPath**  uses *path expressions* to select nodes in an XML document. The node is selected by following a path or steps. The most useful path expressions are listed below
+**XPath**  uses *path expressions* to select nodes in an **XML document**. The *node* is **selected** by following a *path* or *steps*. The **most useful** path *expressions* are *listed* below ...
 
 # Finding XPATH :bulb:
-**XPath** of Elements are available by using F12 on the live webpage by entering <br>
-the chrome developer console and select xpath by copy selections
+**XPath** of **Elements** are *available* by using **F12** on the **live webpage** by *entering* <br>
+the *chrome* **developer console** and select **xpath** by *copy selections* drop down menu.
 
 # Attacks :sunglasses:
 
@@ -75,13 +75,13 @@ the chrome developer console and select xpath by copy selections
 
 # Issues :sweat_drops:
 
-- [ ] Rapid Multiple Items
-- [ ] Closing Rapid Tab Error
+- [ ] **Rapid Multiple Items**
+- [ ] **Closing Rapid Tab Error**
 
 # Possible TODO :fire:
 
-- [ ] Errors Decoration
-- [ ] Output Decoration
+- [ ] **Errors Decoration**
+- [ ] **Output Decoration**
 
 
 
@@ -108,4 +108,4 @@ SOFTWARE.
 
 
 # Expansion :heart:
-Developed With LOVE By Ashkan Ebtekari
+**Developed With LOVE By Ashkan Ebtekari**
