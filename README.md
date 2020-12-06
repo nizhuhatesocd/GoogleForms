@@ -19,7 +19,7 @@ Easily manage vote sheets, and entry automations with GoogleFormsHack. <br>
 
 # Celebrate ! :beers:
 Be the Winner and Celebrate !
-![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleCelebration.gif)
+![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleCelebration)
 
 
 # Selecting Nodes :balloon:
