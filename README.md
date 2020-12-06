@@ -15,6 +15,7 @@ attacks including the rapid and secret finder attacks and detailed branch attack
 # Be The Employee Of The Year ! :tada:
 ![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleFormsHack.gif)
 
+# Celebrate ! :beers:
 
 # Selecting Nodes :balloon:
 **XPath**  Expansion Algorithms
@@ -42,7 +43,7 @@ attacks including the rapid and secret finder attacks and detailed branch attack
 [!]**Note**: (If the path starts with a slash ( / ) it always represents an absolute path to an element !)
 
 
-# What the Heck is XPATH ? :mega:
+# What the Heck is XPATH ? :rainbow:
 **XPath**  uses *path expressions* to select nodes in an XML document. The node is selected by following a path or steps. The most useful path expressions are listed below
 
 # Finding XPATH :bulb:
