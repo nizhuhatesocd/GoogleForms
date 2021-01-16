@@ -76,7 +76,7 @@ the *chrome* **developer console** and select **xpath** by *copy selections* dro
 # Issues :sweat_drops:
 
 - [x] **Rapid Multiple Items**
-- [] **Closing Rapid Tab Error**
+- [x] **Closing Rapid Tab Error**
 
 # Possible TODO :fire:
 
