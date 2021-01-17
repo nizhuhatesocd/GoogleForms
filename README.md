@@ -80,7 +80,7 @@ the *chrome* **developer console** and select **xpath** by *copy selections* dro
 
 # Possible TODO :fire:
 
-- [ ] **Errors Decoration**
+- [x] **Errors Decoration**
 - [ ] **Output Decoration**
 
 
