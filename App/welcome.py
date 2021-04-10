@@ -8,7 +8,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
 class Welcome:
     # Colors
     Green = '\033[32m'
@@ -30,7 +29,19 @@ def getwelcome():
     LightRed = '\033[91m'
     banner = 'Google Forms'
     figlet = Figlet(font='slant')
-    print(LightRed, figlet.renderText(banner))
+    print(
+        '\n                 |================|                              '
+        '\n                 | I Hate         |                              '
+        '\n ===========     |        Robots! |     ========                 '
+        '\n ===========    /|================|     ==                       '
+        '\n ===           /               =        ==                    ==='
+        '\n ===          /                =        =====                 =  '
+        '\n ===    =====   ==== ==== ==== = ====   =====  ==== = = =     ==='
+        '\n =====     ==   =  = =  = =  = = ==     ==     =  = ==  =====   ='
+        '\n ============   ==== ==== ==== = ====   ==     ==== =   = = = ==='
+        '\n                             =                                   '
+        '\n                          ====                                   '
+    )
 
     print('\n \nWelcome To GoogleForms Hack \n \n [1] Rapid Input \n [2] Secret Finder \n [3] Exit \n \n'
           'Version 1.0.0 \n'
