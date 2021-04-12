@@ -1,7 +1,8 @@
 import time
 import random
 
-from pyfiglet import Figlet
+from sty import fg, bg, ef
+from selectmenu import SelectMenu
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -13,21 +14,34 @@ import rapid
 class Main:
     # Banner
     banner = welcome.getwelcome()
-    selectedmenu = int(input("Select From [1 TO 3]: \n"))
 
     # Menu Splitter
+    menu = SelectMenu()
+    menu.add_choices(["[1] Rapid Input", "[2] Secret Finder", "[3] Exit"])
+    selected = 0
+    result = menu.select("? What Type Of Attack You Want To Perform ?")
+
+    if result == "[1] Rapid Input":
+        selected = 1
+        print("Starting Rapid Input Attack ...")
+    elif result == "[2] Secret Finder":
+        selected = 2
+        print("Starting Secret Finder Attack ...")
+    elif result == "[3] Exit":
+        selected = 3
+        print("Exiting Program ...")
     
     # Rapid Input
-    if selectedmenu == 1:
+    if selected == 1:
         print("Started the Rapid Operation ...")
         rapidattack = rapid.getrapid()
 
     # Secret Finder
-    elif selectedmenu == 2:
+    elif selected == 2:
         print("Started the Answer Attack")
 
     # Exit GoogleForms Hack
-    elif selectedmenu == 3:
+    elif selected == 3:
         print("The Program Will Exit ...")
         exit()
 
