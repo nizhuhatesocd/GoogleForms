@@ -1,8 +1,10 @@
 import time
 import random
+import curses
 from stringcolor import *
+from selectmenu import SelectMenu
 
-from pyfiglet import Figlet
+from sty import fg, bg, ef
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -23,27 +25,27 @@ class Welcome:
     LightCyan = '\033[96m'
     White = '\033[97m'
 
-
 # Banner
 def getwelcome():
-    LightRed = '\033[91m'
-    banner = 'Google Forms'
-    figlet = Figlet(font='slant')
-    print(
-        '\n                 |================|                              '
-        '\n                 | I Hate         |                              '
-        '\n ===========     |        Robots! |     ========                 '
-        '\n ===========    /|================|     ==                       '
-        '\n ===           /               =        ==                    ==='
-        '\n ===          /                =        =====                 =  '
-        '\n ===    =====   ==== ==== ==== = ====   =====  ==== = = =     ==='
-        '\n =====     ==   =  = =  = =  = = ==     ==     =  = ==  =====   ='
-        '\n ============   ==== ==== ==== = ====   ==     ==== =   = = = ==='
-        '\n                             =                                   '
-        '\n                          ====                                   '
-    )
 
-    print('\n \nWelcome To GoogleForms Hack \n \n [1] Rapid Input \n [2] Secret Finder \n [3] Exit \n \n'
-          'Version 1.0.0 \n'
-          'Developed By Ashkan Ebtekari\n'
-          '2020 @ Copyright\n \n \n')
+    # Banner
+    print(fg(0, 255, 145) +
+            '\n                 |================|                              '
+            '\n                 | I Hate         |                              '
+            '\n ===========     |        Robots! |     ========                 '
+            '\n ===========    /|================|     ==                       '
+            '\n ===           /               =        ==                    ==='
+            '\n ===          /                =        =====                 =  '
+            '\n ===    =====   ==== ==== ==== = ====   =====  ==== = = =     ==='
+            '\n =====     ==   =  = =  = =  = = ==     ==     =  = ==  =====   ='
+            '\n ============   ==== ==== ==== = ====   ==     ==== =   = = = ==='
+            '\n                             =                                   '
+            '\n                          ====                                   '
+        )
+
+    print(fg(0, 255, 145) +
+            '\nWelcome To GoogleForms Hack \n'
+            'Version 1.0.0 \n'
+            'Developed By Ashkan Ebtekari\n'
+            '2020 @ Copyright\n \n \n'
+        )
