@@ -1,4 +1,6 @@
 selenium
+beautifulsoup4
 string-color
 SelectMenu
 sty
+html
