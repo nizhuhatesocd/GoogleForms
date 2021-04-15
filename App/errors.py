@@ -1,8 +1,7 @@
 import time
 import random
-from stringcolor import *
 
-from pyfiglet import Figlet
+from sty import fg, bg, ef
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -11,21 +10,22 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class Errors:
     # Info
-    x = 1
+    GoogleDriveErr = None
+    GoogleFormLinkErr = None
 
 
 # Error Method
 def geterrors(self):
     # Error Conditions
-    GoogleDriveErr = "Unidentified Google Drive Path"
-    GoogleFormLinkErr = "Invalid Google Form Link"
+    GoogleDriveErr = "[!] Unidentified Google Drive Path !"
+    GoogleFormLinkErr = "[!] Invalid Google Form Link !"
 
     # Error Handler
     if self == 1:
-        print(GoogleDriveErr)
+        print(fg(255, 76, 36) + GoogleDriveErr)
 
     elif self == 2:
-        print(GoogleFormLinkErr)
+        print(fg(255, 76, 36) + GoogleFormLinkErr)
 
     else:
-        print(self)
+        print(fg(255, 76, 36) + self)
