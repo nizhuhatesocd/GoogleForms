@@ -19,7 +19,7 @@ class Main:
     menu = SelectMenu()
     menu.add_choices(["[1] Rapid Input", "[2] Secret Finder", "[3] Exit"])
     selected = 0
-    result = menu.select("? What Type Of Attack You Want To Perform ?")
+    result = menu.select("[?] What Type Of Attack You Want To Perform ?")
 
     if result == "[1] Rapid Input":
         selected = 1
@@ -33,16 +33,16 @@ class Main:
     
     # Rapid Input
     if selected == 1:
-        print("Started the Rapid Operation ...")
+        print("Started the Rapid Operation ... \n")
         rapidattack = rapid.getrapid()
 
     # Secret Finder
     elif selected == 2:
-        print("Started the Answer Attack")
+        print("Started the Answer Attack ... \n")
 
     # Exit GoogleForms Hack
     elif selected == 3:
-        print("The Program Will Exit ...")
+        print("The Program Will Exit ... \n")
         exit()
 
     # Unknown Credential
