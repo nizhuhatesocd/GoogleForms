@@ -1,7 +1,10 @@
 import time
 import random
 
-from pyfiglet import Figlet
+import html
+import requests
+from sty import fg, bg, ef
+from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -11,21 +14,25 @@ import errors
 
 
 class Rapid:
-    x = 1
 
+    chromedriver = None
 
 def getrapid():
     # Chrome Driver
-    try:
-        chromedriver = "/usr/local/bin/chromedriver"
-        driver = webdriver.Chrome(chromedriver)
+    print(fg(252, 245, 38) + "[*] After Entering The Path We Will Save The Data !")
+    print(fg(252, 245, 38) + "[*] You Can Download Chrome Driver From https://chromedriver.chromium.org/downloads")
+    chromedriver = (input(fg(79, 176, 140) + "[~] Please Enter Your Driver Path : "))
 
+    try:
+        chromedriverValidated = chromedriver.endswith("chromedriver")
+        driver = webdriver.Chrome(chromedriver)
     except:
-        err = errors.geterrors(1)
-        exit()
+        if not chromedriverValidated:
+            err = errors.geterrors(1)
+            exit()
 
     # Target Form
-    userlink = input("Enter Your Google Form Url: \n")
+    userlink = input(fg(79, 176, 140) + "[~] Enter Your Google Form Url: ")
     verifiedlink = userlink.startswith("https://docs.google.com/forms/")
 
     try:
@@ -36,7 +43,34 @@ def getrapid():
             err = errors.geterrors(2)
             exit()
 
-    # Target Option
+    # Target Options
+    req = requests.get(userlink)
+    soup = BeautifulSoup(req.content, "html.parser")
+
+    print("Recognizing Answers ... \n \n")
+    print(fg(0, 255, 145) + "[?] Which One Is Your Target ? \n")
+
+    optioncount = 0
+    alloptions = []
+
+    for options in soup.find_all("span", class_="freebirdFormviewerComponentsQuestionRadioLabel") or soup.find_all("span", class_="freebirdFormviewerComponentsQuestionCheckboxLabel"):
+        optioncount = optioncount + 1
+        convertcount = str(optioncount)
+        print(convertcount + ". " + options.text)
+        alloptions.append(options.text)
+
+    print(alloptions)
+    
+    
+    # User Target
+    usertarget = input("\nEnter Your Target [1 TO {max}] : ".format(max = convertcount))
+    converttarget = int(usertarget)
+
+    if converttarget <= 0 :
+        print(fg(255, 76, 36) + "Invalid Menu Number !")
+    else:
+        print("Performing Attack On {0} ...".format(alloptions[converttarget]))
+
 
     # Item One
     itemxpathone = input("Enter First Item XPath : \n")
