@@ -75,30 +75,7 @@ def getrapid():
 
     else:
         print(fg(255, 76, 36) + "Invalid Menu Number !")
-
-
-
-    # Item One
-    itemxpathone = input("Enter First Item XPath : \n")
-    verifiedxpath = itemxpathone.startswith("//*[@id=")
-
-    try:
-        optionpath = itemxpathone
-
-    except:
-        if not verifiedxpath:
-            err = errors.geterrors(3)
-            exit()
-
-    # Item Two
-    itemxpathtwo = input("Enter Second Item XPath : \n")
-    verifiedxpath = itemxpathtwo.startswith("//*[@id=")
-    try:
-        submitpath = itemxpathtwo
-    except:
-        if not verifiedxpath:
-            err = errors.geterrors(3)
-            exit()
+        
 
     # Counter
     rapidamount = int(input("Enter The Amount of Operations: "))
