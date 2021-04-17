@@ -26,7 +26,7 @@ class Main:
         print("Starting Rapid Input Attack ...")
     elif result == "[2] Secret Finder":
         selected = 2
-        print("Starting Secret Finder Attack ...")
+        print("This Tool is In Demo Build \n You Can Only Use Rapid Input Attack")
     elif result == "[3] Exit":
         selected = 3
         print("Exiting Program ...")
