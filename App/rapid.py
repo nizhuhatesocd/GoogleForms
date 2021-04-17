@@ -51,25 +51,31 @@ def getrapid():
     print(fg(0, 255, 145) + "[?] Which One Is Your Target ? \n")
 
     optioncount = 0
-    alloptions = []
+    alloptions = ["Please Select From Available Targets"]
 
     for options in soup.find_all("span", class_="freebirdFormviewerComponentsQuestionRadioLabel") or soup.find_all("span", class_="freebirdFormviewerComponentsQuestionCheckboxLabel"):
         optioncount = optioncount + 1
         convertcount = str(optioncount)
         print(convertcount + ". " + options.text)
         alloptions.append(options.text)
-
-    print(alloptions)
     
     
     # User Target
     usertarget = input("\nEnter Your Target [1 TO {max}] : ".format(max = convertcount))
     converttarget = int(usertarget)
 
-    if converttarget <= 0 :
-        print(fg(255, 76, 36) + "Invalid Menu Number !")
-    else:
+    if converttarget > 0 :
         print("Performing Attack On {0} ...".format(alloptions[converttarget]))
+        allcheckboxes = []
+        for checkboxes in soup.find_all("span", class_="exportInnerBox"):
+            checkboxcount = checkboxcount + 1
+            convertcount = str(checkboxcount)
+            allcheckboxes.append(checkboxes)
+        print("Found {0} Checkboxes !".format(convertcount))
+
+    else:
+        print(fg(255, 76, 36) + "Invalid Menu Number !")
+
 
 
     # Item One
