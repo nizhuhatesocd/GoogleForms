@@ -1,0 +1,13 @@
+[11572:11587:0419/014537.209534:WARNING:gpu_process_host.cc(1282)] The GPU process has crashed 1 time(s)
+[11572:11603:0419/014537.226850:ERROR:bus.cc(393)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[11572:11603:0419/014537.226917:ERROR:bus.cc(393)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[11572:11603:0419/014537.245019:ERROR:bus.cc(393)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[11572:11603:0419/014537.245063:ERROR:bus.cc(393)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[11572:11587:0419/014537.302982:WARNING:gpu_process_host.cc(1282)] The GPU process has crashed 2 time(s)
+[11572:11587:0419/014537.369128:WARNING:gpu_process_host.cc(1282)] The GPU process has crashed 3 time(s)
+[11572:11587:0419/014537.419414:WARNING:gpu_process_host.cc(1282)] The GPU process has crashed 4 time(s)
+[11572:11587:0419/014537.477998:WARNING:gpu_process_host.cc(1282)] The GPU process has crashed 5 time(s)
+[11572:11587:0419/014537.505924:WARNING:gpu_process_host.cc(1282)] The GPU process has crashed 6 time(s)
+[11572:11587:0419/014537.505979:FATAL:gpu_data_manager_impl_private.cc(415)] GPU process isn't usable. Goodbye.
+[11581:11581:0100/000000.545433:ERROR:zygote_linux.cc(608)] Zygote could not fork: process_type renderer numfds 5 child_pid -1
+[11581:11581:0100/000000.545623:ERROR:zygote_linux.cc(640)] write: Broken pipe (32)
