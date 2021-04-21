@@ -36,5 +36,8 @@ Just install the **requirements.txt** and run the **main.py** file.
 3- Select your **target** input <br>
 4- Enter the **amount** you're looking for <br>
 
+# Secret Finder
+Building ...
+
 # Expansion :heart:
 **Developed With ♥️ By Ashkan Ebtekari**
