@@ -1,13 +1,20 @@
-![Header](GoogleFormsHack.png)
+![Header](Files/GoogleFormsHack.png)
 # Google Forms
 
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![Demandez moi n'importe quoi !](https://img.shields.io/badge/Demandez%20moi-n'%20importe%20quoi-1abc9c.svg)](https://GitHub.com/Naereen/ama.fr)
 [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest)
-[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
+[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Chamepp/GoogleForms/issues/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+<p align="center">
+ <a href="https://marketplace.visualstudio.com/items?itemName=Endormi.2077-theme">
+  <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square" alt="version" />
+  <img src="https://readthedocs.org/projects/ansicolortags/badge/?version=latest?style=flat-square" alt="version" />
+  <img src="https://img.shields.io/github/issues/Naereen/StrapDown.js.svg?style=flat-square" alt="version" />
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="version" />
+ </a>
+</p>
 
 **Easily** *Hack Google Forms* User **Data Entries** with wide range of possible <br>
 attacks including the **rapid** and **secret finder** *attacks* and detailed *branch attacks*. <br>
