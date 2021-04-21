@@ -5,30 +5,32 @@
   <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square" alt="version" />
   <img src="https://img.shields.io/github/issues/Naereen/StrapDown.js.svg?style=flat-square" alt="version" />
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="version" />
+  <img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=flat-square" />
 </p>
 
 **Easily** *Hack Google Forms* User **Data Entries** with wide range of possible <br>
-attacks including the **rapid** and **secret finder** *attacks* and detailed *branch attacks*. <br>
+attacks including the **rapid** and **secret finder** *attacks*. <br>
+Easily manage vote sheets, and entry automations. <br>
 
-# Be The Employee Of The Year ! :tada:
-##### Easily manage vote sheets, and entry automations with GoogleFormsHack. <br> <br>
+# Setup
+Just install the **requirements.txt** and run the **main.py** file.
+
+|  python3 install -r requirements.txt  |
+| ------------------------------------- |
+
+|  python3 main.py                      |
+| ------------------------------------- |
+
 <img src="https://github.com/Chamepp/GoogleForms/Files/GoogleFormsHack.gif" alt="preview" /> <br>
-
-
-# Celebrate ! :beers:
-### Be the Winner and Celebrate ! <br> <br>
-![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleCelebration)
-
 
 # Attacks :sunglasses:
 
 | Menu            | Type           | Description                       |
 | --------------- | -------------- | --------------------------------- |
-| Rapid Input     | Input Attacks  | Rapid Input Taking and Data Entry |                 |
-| Secret Finder   | Answer Finder  | Secret of Questions Finding       |
+| Rapid Input     | Input Attacks  | Rapid Input Submitter             |
+| Secret Finder   | Answer Finder  | Finds Answer of Questions         |
 | Exit            | Program Exit   | Exits The Program                 |
 
 
-
 # Expansion :heart:
-**Developed With ♥️: By Ashkan Ebtekari**
+**Developed With ♥️ By Ashkan Ebtekari**
