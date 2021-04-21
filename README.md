@@ -1,28 +1,18 @@
 ![Header](Files/GoogleFormsHack.png)
 # Google Forms
 
-
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest)
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Chamepp/GoogleForms/issues/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-
 <p align="center">
- <a href="https://marketplace.visualstudio.com/items?itemName=Endormi.2077-theme">
   <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square" alt="version" />
-  <img src="https://readthedocs.org/projects/ansicolortags/badge/?version=latest?style=flat-square" alt="version" />
   <img src="https://img.shields.io/github/issues/Naereen/StrapDown.js.svg?style=flat-square" alt="version" />
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="version" />
- </a>
 </p>
 
 **Easily** *Hack Google Forms* User **Data Entries** with wide range of possible <br>
 attacks including the **rapid** and **secret finder** *attacks* and detailed *branch attacks*. <br>
 
 # Be The Employee Of The Year ! :tada:
-##### Get More into automations with google forms hack selenium and chrome drive. <br>
 ##### Easily manage vote sheets, and entry automations with GoogleFormsHack. <br> <br>
-![](https://github.com/Chamepp/GoogleForms/blob/master/GoogleFormsHack.gif) <br>
+<img src="https://github.com/Chamepp/GoogleForms/Files/GoogleFormsHack.gif" alt="preview" /> <br>
 
 
 # Celebrate ! :beers:
