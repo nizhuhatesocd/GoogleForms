@@ -3,6 +3,8 @@ import random
 
 import html
 import requests
+import time
+import sys
 from sty import fg, bg, ef
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -18,6 +20,7 @@ class Rapid:
     x = 0
 
 def getrapid():
+
     # Chrome Driver
     print(fg(252, 245, 38) + "[*] After Entering The Path We Will Save The Data !")
     print(fg(252, 245, 38) + "[*] You Can Download Chrome Driver From https://chromedriver.chromium.org/downloads")
@@ -77,18 +80,18 @@ def getrapid():
         print("Found {0} Checkboxes !".format(convertcount))
 
         checkboxpath = None
+        if soup.find_all("span", class_="freebirdFormviewerComponentsQuestionCheckboxLabel"):
+            if converttarget == 1: checkboxpath = '//*[@id="i6"]/div[2]'
+            checkboxpath = '//*[@id="i{0}"]/div[2]'.format(converttarget * 3 + 3)
+            print(checkboxpath)
+
+        if soup.find_all("span", class_="freebirdFormviewerComponentsQuestionRadioLabel"):
+            if converttarget == 1: checkboxpath = '//*[@id="i5"]/div[2]'
+            checkboxpath = '//*[@id="i{0}"]/div[2]'.format(converttarget * 3 + 2)
+            print(checkboxpath)
+
         submitpath = '//*[@id="mG61Hd"]/div[2]/div/div[3]/div/div/div/span'
-        if converttarget == 1:
-            checkboxpath = '//*[@id="i6"]/div[2]'
-
-        elif converttarget == 2:
-            checkboxpath = '//*[@id="i9"]/div[2]'
-
-        elif converttarget == 3:
-            checkboxpath = '//*[@id="i12"]/div[2]'
-
-        elif converttarget == 4:
-            checkboxpath = '//*[@id="i15"]/div[2]'
+ 
 
     else:
         print(fg(255, 76, 36) + "Invalid Menu Number !")
@@ -100,15 +103,26 @@ def getrapid():
     counter = 0
 
     while counter < rapidamount:
-        # Choice Automation
-        choice = driver.find_element_by_xpath(checkboxpath)
-        webdriver.ActionChains(driver).move_to_element(choice).click(choice).perform()
-        time.sleep(0.5)
+        
+        # Loading
+        animation = "|/-\\"
+        for i in range(rapidamount):
+            sys.stdout.write("\r" + animation[i % len(animation)])
+            sys.stdout.flush()
 
-        # Submit Automation
-        submit = driver.find_element_by_xpath(submitpath)
-        webdriver.ActionChains(driver).move_to_element(submit).click(submit).perform()
+            # Choice Automation
+            choice = driver.find_element_by_xpath(checkboxpath)
+            webdriver.ActionChains(driver).move_to_element(choice).click(choice).perform()
+            time.sleep(0.5)
 
-        # Counter & Redo
-        counter = counter + 1
-        driver.get(userlink)
+            # Submit Automation
+            submit = driver.find_element_by_xpath(submitpath)
+            webdriver.ActionChains(driver).move_to_element(submit).click(submit).perform()
+
+            # Counter & Redo
+            counter = counter + 1
+            driver.get(userlink)
+
+        print("\n")
+
+    print('Operation Done Successfully !')
