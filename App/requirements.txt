@@ -4,3 +4,4 @@ string-color
 SelectMenu
 sty
 html
+tqdm
