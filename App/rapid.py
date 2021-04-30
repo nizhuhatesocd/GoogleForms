@@ -107,7 +107,7 @@ def getrapid():
         # Loading
         animation = "|/-\\"
         for i in range(rapidamount):
-            sys.stdout.write("\r" + animation[i % len(animation)])
+            sys.stdout.write("\r" + "Loading... " + animation[i % len(animation)])
             sys.stdout.flush()
 
             # Choice Automation
