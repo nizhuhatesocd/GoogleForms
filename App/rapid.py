@@ -2,9 +2,12 @@ import time
 import random
 
 import html
+import json
 import requests
 import time
+from time import sleep
 import sys
+from tqdm import tqdm
 from sty import fg, bg, ef
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -21,9 +24,11 @@ class Rapid:
 
 def getrapid():
 
-    # Chrome Driver
+    # Instruction
     print(fg(252, 245, 38) + "[*] After Entering The Path We Will Save The Data !")
     print(fg(252, 245, 38) + "[*] You Can Download Chrome Driver From https://chromedriver.chromium.org/downloads")
+
+    # Chrome Driver
     chromedriver = input(fg(79, 176, 140) + "[~] Please Enter Your Driver Path : ")
     chromeOptions = webdriver.ChromeOptions() 
     chromeOptions.add_argument("--no-sandbox")
@@ -32,8 +37,17 @@ def getrapid():
     driver = webdriver.Chrome(executable_path=chromedriver, chrome_options=chromeOptions)
     
 
+    data = {}
+    data['driverPath'] = []
     try:
         chromedriverValidated = chromedriver.endswith("chromedriver")
+        data['driverPath'].append({
+                'path': chromedriver,
+                'isValidated': True
+            })
+        print(data)
+        with open('dependencies.json', 'w') as f:
+                json.dump(data, f)
     except:
         if not chromedriverValidated:
             err = errors.geterrors(1)
@@ -43,18 +57,24 @@ def getrapid():
     userlink = input(fg(79, 176, 140) + "[~] Enter Your Google Form Url: ")
     verifiedlink = userlink.startswith("https://docs.google.com/forms/")
 
-    driver.get(userlink)
+    
+    # Get Link
+    if not driver.get(userlink):
+        for i in tqdm(range(5)):
+            sleep(0.2)
+    
+    # Link Verification
     if not verifiedlink:
         err = errors.geterrors(2)
         exit()
+    
     
 
     # Target Options
     req = requests.get(userlink)
     soup = BeautifulSoup(req.content, "html.parser")
 
-    print("Recognizing Answers ... \n \n")
-    print(fg(0, 255, 145) + "[?] Which One Is Your Target ? \n")
+    print(fg(0, 255, 145) + "\n[?] Which One Is Your Target ? \n")
 
     optioncount = 0
     alloptions = ["Please Select From Available Targets"]
@@ -105,10 +125,8 @@ def getrapid():
     while counter < rapidamount:
         
         # Loading
-        animation = "|/-\\"
-        for i in range(rapidamount):
-            sys.stdout.write("\r" + "Loading... " + animation[i % len(animation)])
-            sys.stdout.flush()
+        for i in tqdm(range(rapidamount)):
+            sleep(0.2)
 
             # Choice Automation
             choice = driver.find_element_by_xpath(checkboxpath)
