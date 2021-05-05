@@ -7,6 +7,7 @@ import requests
 import time
 from time import sleep
 import sys
+import os
 from tqdm import tqdm
 from sty import fg, bg, ef
 from bs4 import BeautifulSoup
@@ -29,29 +30,33 @@ def getrapid():
     print(fg(252, 245, 38) + "[*] You Can Download Chrome Driver From https://chromedriver.chromium.org/downloads")
 
     # Chrome Driver
-    chromedriver = input(fg(79, 176, 140) + "[~] Please Enter Your Driver Path : ")
-    chromeOptions = webdriver.ChromeOptions() 
+    data = {}
+    checkPath = True
+    with open('dependencies.json', 'r') as read_dependencies:
+        read_dependencies.seek(0)
+        checkPath = read_dependencies.readline(1)
+    if not checkPath:
+        chromedriver = input(fg(79, 176, 140) + "[~] Please Enter Your Driver Path : ")
+        try:
+            chromedriverValidated = chromedriver.endswith("chromedriver")
+            data['driverPath'] = []
+            data['driverPath'].append({
+                    'path': chromedriver,
+                    'isValidated': True
+                })
+            print(data)
+            with open('dependencies.json', 'w') as f:
+                    json.dump(data, f)
+        except:
+            if not chromedriverValidated:
+                err = errors.geterrors(1)
+                exit()
+
+    chromeOptions = webdriver.ChromeOptions()
     chromeOptions.add_argument("--no-sandbox")
     chromeOptions.add_argument("--disable-setuid-sandbox")
     chromeOptions.add_argument("--remote-debugging-port=9222")
     driver = webdriver.Chrome(executable_path=chromedriver, chrome_options=chromeOptions)
-    
-
-    data = {}
-    data['driverPath'] = []
-    try:
-        chromedriverValidated = chromedriver.endswith("chromedriver")
-        data['driverPath'].append({
-                'path': chromedriver,
-                'isValidated': True
-            })
-        print(data)
-        with open('dependencies.json', 'w') as f:
-                json.dump(data, f)
-    except:
-        if not chromedriverValidated:
-            err = errors.geterrors(1)
-            exit()
 
     # Target Form
     userlink = input(fg(79, 176, 140) + "[~] Enter Your Google Form Url: ")
