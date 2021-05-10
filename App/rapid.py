@@ -45,13 +45,19 @@ def getrapid():
                     'isValidated': True
                 })
             print(data)
-            with open('dependencies.json', 'w') as f:
-                    json.dump(data, f)
+            with open('dependencies.json', 'w') as write_dependencies:
+                    json.dump(data, write_dependencies)
         except:
             if not chromedriverValidated:
                 err = errors.geterrors(1)
                 exit()
+    else:
+        with open('dependencies.json', 'r') as read_dependencies_path:
+            mainData = json.load(read_dependencies_path)
+            pathData = mainData['driverPath', 'path']
+            print(pathData)
 
+    chromedriver = '/usr/local/share/chromedriver'
     chromeOptions = webdriver.ChromeOptions()
     chromeOptions.add_argument("--no-sandbox")
     chromeOptions.add_argument("--disable-setuid-sandbox")
