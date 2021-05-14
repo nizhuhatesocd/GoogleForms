@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square" alt="version" />
-  <img src="https://img.shields.io/github/issues/Naereen/StrapDown.js.svg?style=flat-square" alt="version" />
+  <img src="https://img.shields.io/github/issues/Chamepp/GoogleForms.svg?style=flat-square" alt="version" />
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="version" />
   <img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=flat-square" />
 </p>
