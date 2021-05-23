@@ -44,7 +44,6 @@ def getrapid():
                     'path': chromedriver,
                     'isValidated': True
                 })
-            print(data)
             with open('dependencies.json', 'w') as write_dependencies:
                     json.dump(data, write_dependencies)
         except:
@@ -54,10 +53,9 @@ def getrapid():
     else:
         with open('dependencies.json', 'r') as read_dependencies_path:
             mainData = json.load(read_dependencies_path)
-            pathData = mainData['driverPath', 'path']
-            print(pathData)
+            pathData = mainData['driverPath'][0]['path']
+            chromedriver =  pathData
 
-    chromedriver = '/usr/local/share/chromedriver'
     chromeOptions = webdriver.ChromeOptions()
     chromeOptions.add_argument("--no-sandbox")
     chromeOptions.add_argument("--disable-setuid-sandbox")
@@ -114,12 +112,10 @@ def getrapid():
         if soup.find_all("span", class_="freebirdFormviewerComponentsQuestionCheckboxLabel"):
             if converttarget == 1: checkboxpath = '//*[@id="i6"]/div[2]'
             checkboxpath = '//*[@id="i{0}"]/div[2]'.format(converttarget * 3 + 3)
-            print(checkboxpath)
 
         if soup.find_all("span", class_="freebirdFormviewerComponentsQuestionRadioLabel"):
             if converttarget == 1: checkboxpath = '//*[@id="i5"]/div[2]'
             checkboxpath = '//*[@id="i{0}"]/div[2]'.format(converttarget * 3 + 2)
-            print(checkboxpath)
 
         submitpath = '//*[@id="mG61Hd"]/div[2]/div/div[3]/div/div/div/span'
  
